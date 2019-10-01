@@ -2,10 +2,10 @@ import tkinter as tk
 window=tk.Tk()
 window.title("Sentence Reverser")
 
-heading_label=tk.Label(mainWindow, text="Enter the sentence")
+heading_label=tk.Label(window, text="Enter the sentence")
 heading_label.pack()
 
-sen_feild=tk.Entry(mainWindow)
+sen_feild=tk.Entry(window)
 sen_feild.pack()
 
 def reverse(k):

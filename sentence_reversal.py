@@ -1,6 +1,6 @@
 import tkinter as tk
-mainWindow=tk.Tk()
-mainWindow.title("Sentence Reverser")
+window=tk.Tk()
+window.title("Sentence Reverser")
 
 heading_label=tk.Label(mainWindow, text="Enter the sentence")
 heading_label.pack()
@@ -17,8 +17,7 @@ def reverse(k):
     while (len(s)):
         print(s.pop(), end=" ")
 
-#k = "Let the sentence be reversed"
-reverse(sen_feild.get())
-
-button = tk.Button(mainWindow, text="Get Value", command=lambda: reverse())
+button = tk.Button(mainWindow, text="Find Reverse", command=lambda: reverse(sen_feild.get()))
 button.pack()
+
+window.mainloop()

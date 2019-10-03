@@ -15,13 +15,8 @@ def reverse(k):
         s.append(word)
 
     while (len(s)):
-        out = []
-        out.append(s.pop())
-        # out = tk.Text(window, s.pop(), end=" " )
-        # out.pack()
-        o = tk.Label(window, text=str(out))
+        o = tk.Label(window, text=s.pop())
         o.pack()
-        #s.pop(), end=" "
 
 button = tk.Button(window, text="Find Reverse", command=lambda: reverse(sen_feild.get()))
 button.pack()

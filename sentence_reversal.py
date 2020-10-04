@@ -5,7 +5,7 @@ rowfor = 1
 window=tk.Tk()
 window.title("Sentence Reverser")
 window.resizable(False,True)
-heading_label=tk.Label(window, text="Enter the sentence",fg="white",bg="red")
+heading_label=tk.Label(window, text="Enter the Sentence",fg="white",bg="red")
 heading_label.grid(row=0,column=0,sticky="nsew")
 
 columnForEntry = tk.Frame(window)
